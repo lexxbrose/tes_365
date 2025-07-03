@@ -50,10 +50,8 @@ alt='' imgfield='tn_img_1748792332085'
     const base={r:200,g:16,b:46}, hl={r:255,g:100,b:100};
     const neighbor=1;
     
-    const size = 600;
-    const dpr=1;
-    
-    console.log(dpr);
+    const size = isMobile.value ? 340 : 600;
+    const dpr=window.devicePixelRatio||1;
     
     canvas.width=size*dpr; 
     canvas.height=size*dpr;
